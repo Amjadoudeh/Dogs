@@ -17,7 +17,7 @@ class DogApi {
             case .randomImageFromAllDogs:
                 return "https://dog.ceo/api/breeds/image/random"
             case .randomImageForBreed(let breed):
-                return "https://dog.ceo/api/\(breed)/hound/images/random"
+                return "https://dog.ceo/api/breed/\(breed)/images/random"
             case .listAllBreeds:
                 return "https://dog.ceo/api/breeds/list/all"
             }
@@ -54,9 +54,9 @@ class DogApi {
 
             let decoder = JSONDecoder()
             let breedsResponse = try! decoder.decode(BreedsListResponse.self, from: data)
-            let breeds = breedsResponse.message?.keys.map({$0})
-            print(breeds ?? "")
-            completionHandler(breeds!, nil)
+            let breeds = breedsResponse.message.keys.map({$0})
+            print(breeds)
+            completionHandler(breeds, nil)
         }
         task.resume()
     }
