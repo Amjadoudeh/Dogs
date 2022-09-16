@@ -21,6 +21,7 @@
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-h1-Cw0">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </pickerView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="skI-VE-wOl">
                                         <rect key="frame" x="0.0" y="216" width="374" height="515"/>
@@ -30,14 +31,24 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicover the Dogs " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peE-t1-N3p">
+                                <rect key="frame" x="20" y="44" width="374" height="79"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dkw-zj-DHa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6qp-Bf-axg"/>
+                            <constraint firstItem="peE-t1-N3p" firstAttribute="leading" secondItem="dkw-zj-DHa" secondAttribute="leading" id="PZu-d6-ZdD"/>
+                            <constraint firstItem="peE-t1-N3p" firstAttribute="trailing" secondItem="dkw-zj-DHa" secondAttribute="trailing" id="SEx-hO-16V"/>
                             <constraint firstItem="dkw-zj-DHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="U2B-jb-KhU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkw-zj-DHa" secondAttribute="trailing" constant="20" id="aA6-1g-aLd"/>
+                            <constraint firstItem="dkw-zj-DHa" firstAttribute="top" secondItem="peE-t1-N3p" secondAttribute="bottom" constant="8" id="bJ2-Pl-ALa"/>
                             <constraint firstItem="dkw-zj-DHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cZU-wp-WbL"/>
+                            <constraint firstItem="peE-t1-N3p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iJa-Ce-tMe"/>
                         </constraints>
                     </view>
                     <connections>
